@@ -27,6 +27,10 @@
             v-on:click="handleRouter('landing')"
             class="menu_tags landing_tag"
           >Landing</span>
+          <span
+            v-on:click="jumpBirthday"
+            class="menu_tags landing_tag"
+          >Birthday</span>
         </div>
       </div>
     </div>
@@ -130,6 +134,9 @@ export default {
     let menuFixed = value(false);
     let showCommonFooter = value(true);
     let activeMenu = value("home");
+    const jumpBirthday = () => {
+      window.open('/happy-birstday.html', '_blank');
+    };
     const handleRouter = (dir, categorie = '') => {
       activeMenu = dir;
       let path;
@@ -206,6 +213,7 @@ export default {
       showCommonFooter,
       activeMenu,
       handleRouter,
+      jumpBirthday,
       menu,
       changeColor,
       categories
