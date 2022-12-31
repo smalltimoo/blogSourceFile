@@ -31,6 +31,10 @@
             v-on:click="jumpBirthday"
             class="menu_tags landing_tag"
           >Birthday</span>
+          <a
+            href="../static/happy-birstday.html"
+            class="menu_tags landing_tag"
+          >Birthday2</a>
         </div>
       </div>
     </div>
